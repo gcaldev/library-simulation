@@ -9,25 +9,6 @@ public class Library {
 	private HashMap<String, Author> allAuthors = new HashMap<String, Author>();
 	private HashMap<String, Book> allBooks = new HashMap<String, Book>();
 	private double earnings = 0;
-
-	public static void main(String[] args) {
-		Library lib = new Library();
-		lib.loadAuthors("src/Books/authors.txt");
-		lib.loadBooks("src/Books/books.txt");
-		Book test = lib.findBook("A Description of a Set of Prints of Scripture History");
-		System.out.println(test.toString());
-		Book test1 = lib.findBook("Este no esta");
-		System.out.println("Esto es: "+test1);
-		System.out.println(lib.sellBook(test.getName()));
-		System.out.println(lib.showEarnings());
-		System.out.println(lib.sellBook("Cobwebs to Catch Flies"));
-		System.out.println(lib.showEarnings());
-		Book[] books = lib.showAllBooks();
-		for(int i = 0;i < books.length; i++) {
-			System.out.print(i+" ");
-			System.out.println(books[i].toString());
-		}
-	}
 	
 	public boolean loadAuthors(String dir) {
 	    try {
