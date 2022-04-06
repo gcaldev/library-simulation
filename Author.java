@@ -7,11 +7,11 @@ public class Author {
 	private char gender;
 	
 	public Author(String newName, String newEmail, char newGender) {
-			if(newGender == 'm' || newGender == 'f') {
-				name = newName;
-				email = newEmail;
-				gender = newGender;
-			}
+		if(newGender == 'm' || newGender == 'f') {
+			name = newName;
+			email = newEmail;
+			gender = newGender;
+		}
 		
 	}
 	
